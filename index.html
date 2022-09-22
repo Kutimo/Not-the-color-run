@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Not the color run</title>
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="/resources/favicon/favicon-16x16.png"
+    />
+    <link rel="stylesheet" href="/resources/style.css" />
+    <link rel="stylesheet" href="/resources/styleanimations.css" />
+  </head>
+  <body>
+    <header>
+      <nav id="nav" class="navbar">
+        <a href="#"
+          ><img
+            class="logo_img"
+            src="/resources/photos/2020-logo-tcr-header-1.png"
+            alt="Color run logo"
+          />
+        </a>
+        <ul class="menu">
+          <li><a href="#cities">Events</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#">Store</a></li>
+          <li><a href="#sponsors">Become a sponsor</a></li>
+          <li><a href="#">International</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <button id="myBtn" class="cta hvr-box-shadow-outset">
+        Join the list
+      </button>
+      <div id="myModal" class="modal">
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <h2 class="modal_h2">Registration</h2>
+          <form>
+            <input type="text" name="fname" placeholder="Your first name"
+            id="f_name"/>
+            <input type="text" name="lname" placeholder="Your last name" id="l_name"/>
+            <br />
+            <input
+              type="email"
+              name="email"
+              id="email"
+              placeholder="Please enter your Email address"
+            />
+            <br />
+            <select name="birth_day" id="sel_birth_day">
+              <option disabled selected>Day</option>
+              <option>1</option>
+              <option>2</option>
+              <option>3</option>
+              <option>4</option>
+              <option>5</option>
+              <option>6</option>
+              <option>7</option>
+              <option>8</option>
+              <option>9</option>
+              <option>10</option>
+              <option>11</option>
+              <option>12</option>
+              <option>13</option>
+              <option>14</option>
+              <option>15</option>
+              <option>16</option>
+              <option>17</option>
+              <option>18</option>
+              <option>19</option>
+              <option>20</option>
+              <option>21</option>
+              <option>22</option>
+              <option>23</option>
+              <option>24</option>
+              <option>25</option>
+              <option>26</option>
+              <option>27</option>
+              <option>28</option>
+              <option>29</option>
+              <option>30</option>
+              <option>31</option>
+            </select>
+            <select name="birth_month" id="sel_birth_month">
+              <option disabled selected>Month</option>
+              <option class="jan">January</option>
+              <option class="feb">February</option>
+              <option class="mar">March</option>
+              <option class="apr">April</option>
+              <option class="may">May</option>
+              <option class="jun">June</option>
+              <option class="jul">July</option>
+              <option class="aug">August</option>
+              <option class="sep">September</option>
+              <option class="oct">October</option>
+              <option class="nov">November</option>
+              <option class="des">December</option>
+            </select>
+            <select name="birth_year" id="sel_birth_year">
+              <option disabled selected>Year</option>
+              <option>2022</option>
+            </select>
+            <br />
+            <select name="gender" id="gender">
+              <option disabled selected>Gender</option>
+              <option>Male</option>
+              <option>Female</option>
+              <option>Not specified</option>
+            </select>
+            <input type="text" placeholder="Address" id="adress" />
+            <br />
+            <input
+              type="text"
+              name="state"
+              placeholder="State/Province"
+              id="state_province"
+            />
+            <input type="text" name="city" placeholder="City" id="City" />
+            <br />
+            <select name="country" id="sel-country">
+              <option disabled selected>Country</option>
+            </select>
+            <br />
+            <select name="event" id="event">
+              <option value="event" disabled selected>Event</option>
+            </select>
+            <br />
+            <input name="terms" type="checkbox" />
+            <label for="terms"
+              >I agree to these
+              <a href="#" class="terms_a">Terms and Conditions</a></label
+            >
+            <br />
+            <button type="submit" class="submit_button">Register</button>
+          </form>
+        </div>
+      </div>
+      <video autoplay muted loop>
+        <source src="/resources/video/TCR-make-magic-1.mp4" />
+        Your browser does not support the video tag.
+      </video>
+    </main>
+    <article>
+      <h1 id="cities">The color run events</h1>
+      <ul class="cities">
+        <li>Oslo</li>
+        <li>Stavanger</li>
+        <li>Bergen</li>
+        <li>Trondheim</li>
+        <li>Trondheim</li>
+      </ul>
+    </article>
+    <section class="about_section">
+      <div class="section-left">
+        <img
+          class="section-logo-img"
+          src="/resources/photos/2020-tour-logo-1.png"
+          alt="Logo image"
+        />
+        <p class="section-text">
+          Calling all dreamers, believers, and magic-makers! Get up and glow
+          with us for the Happiest 5K on the Planet. 2022 marks The Color Run's
+          10th year celebrating those who make the world brighter, healthier,
+          and happier. Whether this is your 1st or 50th, we can't wait to MAKE
+          MAGIC, MAKE MEMORIES, and MAKE MORE. TOGETHER.
+        </p>
+      </div>
+      <div class="carousel">
+        <button class="carousel__button carousel__button--left hidden">
+          <img
+            src="/resources/svg/buttons/carousel_left copy.svg"
+            alt="button for left scrolling in carousel"
+          />
+        </button>
+        <div class="carousel__track-container">
+          <ul class="carousel__track">
+            <li class="carousel__slide current-slide">
+              <img
+                class="carousel__image"
+                src="/resources/photos/Rectangle 7.png"
+                alt="colors in hand"
+              />
+            </li>
+            <li class="carousel__slide">
+              <img
+                class="carousel__image"
+                src="/resources/photos/Rectangle 4.png"
+                alt="runners"
+              />
+            </li>
+            <li class="carousel__slide">
+              <img
+                class="carousel__image"
+                src="/resources/photos/Rectangle 5.png"
+                alt="colors"
+              />
+            </li>
+            <li class="carousel__slide">
+              <img
+                class="carousel__image"
+                src="/resources/photos/Rectangle 6.png"
+                alt="after run party"
+              />
+            </li>
+          </ul>
+        </div>
+        <button class="carousel__button carousel__button--right">
+          <img
+            src="/resources/svg/buttons/carousel_right.svg"
+            alt="button for right scrolling in carousel"
+          />
+        </button>
+        <div class="carousel__nav">
+          <button class="carousel__indicator current-slide"></button>
+          <button class="carousel__indicator"></button>
+          <button class="carousel__indicator"></button>
+          <button class="carousel__indicator"></button>
+        </div>
+      </div>
+    </section>
+    <section id="sponsors" class="sponsor_section">
+      <h2>Sponsors</h2>
+      <div class="sponsor_logos">
+        <a href="https://tailwindcss.com/">
+          <img
+            class="sponsors_logo"
+            src="/resources/svg/sponsors/Frame 2.svg"
+            alt="Tailwind logo"
+          />
+        </a>
+        <a href="https://slack.com/">
+          <img
+            class="sponsors_logo"
+            src="/resources/svg/sponsors/Frame 3.svg"
+            alt="Slack logo"
+          />
+        </a>
+        <a href="https://www.paypal.com/no/home">
+          <img
+            class="sponsors_logo"
+            src="/resources/svg/sponsors/Frame 4.svg"
+            alt="Paypal logo"
+          />
+        </a>
+        <a href="https://www.apple.com/">
+          <img
+            class="sponsors_logo"
+            src="/resources/svg/sponsors/Frame.svg"
+            alt="Apple logo"
+          />
+        </a>
+      </div>
+    </section>
+    <footer>
+      <ul class="footer_nav">
+        <li><a href="#">To the top</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#">Charity</a></li>
+        <li><a href="#">Contact us</a></li>
+        <li><a href="#">Privacy Policy</a></li>
+      </ul>
+      <div class="social_media">
+        <a href="https://www.instagram.com/"
+          ><img src="/resources/svg/social/instagram.svg" alt="Instagram"
+        /></a>
+        <a href="https://www.facebook.com/"
+          ><img src="/resources/svg/social/face.svg" alt="Facebook"
+        /></a>
+        <a href="mailto:nottherealcolor@run.com"
+          ><img src="/resources/svg/social/mail.svg" alt="Mail"
+        /></a>
+      </div>
+      <h6>Ⓒ None rights reserved nottherealcolorrun.com</h6>
+    </footer>
+    <script src="js/app.js"></script>
+    <script src="/js/data-list.js"></script>
+  </body>
+</html>

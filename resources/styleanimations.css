@@ -1,0 +1,198 @@
+/*hover styles*/
+
+.hvr-box-shadow-outset {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0);
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: box-shadow;
+  transition-property: box-shadow;
+}
+.hvr-box-shadow-outset:hover,
+.hvr-box-shadow-outset:focus,
+.hvr-box-shadow-outset:active {
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.8);
+}
+
+/*carousel from section area.*/
+
+
+
+.carousel {
+  position: relative;
+  height: 400px;
+  width: 35%;
+  margin: 0 auto;
+  padding: 20px
+}
+
+.carousel__image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.carousel__track-container {
+  position: relative;
+  height: 100%;
+  background: #592;
+  overflow: hidden;
+}
+
+.carousel__track {
+  position: relative;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  transition: transform ease-in 250ms;
+}
+
+.carousel__slide {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+}
+
+.carousel__button {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 50%;
+  transform: translateY(-50%);
+  background: transparent;
+  border: 1.2px solid rgba(0, 0, 0, 0.3);
+  height: 35px;
+  width: 35px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.carousel__button--left {
+  left: -25px;
+}
+.carousel__button--right {
+  right: -25px;
+}
+
+.carousel__button img {
+  width: 30px;
+  height: 30px;
+}
+
+.carousel__nav {
+  display: flex;
+  justify-content: center;
+  padding: 10px 0;
+}
+
+.carousel__indicator {
+  border: 0;
+  border-radius: 50%;
+  width: 15px;
+  height: 15px;
+  background-color: rgba(0, 0, 0, 0.3);
+  margin: 0 10px;
+  cursor: pointer;
+}
+
+.carousel__indicator.current-slide {
+  background: rgba(0, 0, 0, 0.7);
+}
+
+.hidden {
+  display: none;
+}
+
+/*modal*/
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 4;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%; 
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0); 
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background:  linear-gradient(
+    180deg,
+    var(--primary-gradient),
+    var(--secondary-gradient),
+    var(--tertiary-gradient)
+  );
+  margin: 5% auto; /* 15% from the top and centered */
+  padding: 10px;
+  border: 1px solid rgba(0, 0, 0, 0.5);
+  width: 60vh;
+  height: 80vh;
+}
+
+/*button*/
+button:hover {
+  cursor: pointer;
+}
+
+/* The Close Button */
+.close {
+  position: absolute;
+  right: 37%;
+  top: 7%;
+  color: rgba(0, 0, 0, 0.4);
+  font-size: 28px;
+  font-weight: bold;
+  z-index: 5;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.modal_h2 {
+  color: #000000;
+  font-size: 36px;
+  padding: 0;
+  border-bottom: 0.5px solid #000000;
+  z-index: 4;
+}
+
+/*input form modal*/
+form {
+  padding-top: 5%;
+
+}
+
+#f_name, #l_name, #gender, #address ##state_province{
+width: 35%;
+}
+#email {
+  margin: 0px;
+  width: 71%;
+}
+
+.terms_a {
+  padding: 0;
+}
+
+.terms_a:hover {
+color: dodgerblue;
+}
+
+
+select [disabled]:first-child {
+  display: none;
+}
