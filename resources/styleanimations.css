@@ -14,12 +14,12 @@
 .hvr-box-shadow-outset:hover,
 .hvr-box-shadow-outset:focus,
 .hvr-box-shadow-outset:active {
-  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.8);
+ 
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.7);
 }
 
+
 /*carousel from section area.*/
-
-
 
 .carousel {
   position: relative;
@@ -176,7 +176,7 @@ form {
 
 }
 
-#f_name, #l_name, #gender, #address ##state_province{
+#f_name, #l_name, #gender, #address #state_province{
 width: 35%;
 }
 #email {
