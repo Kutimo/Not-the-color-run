@@ -141,7 +141,7 @@
   margin: 5% auto; /* 15% from the top and centered */
   padding: 10px;
   border: 1px solid rgba(0, 0, 0, 0.5);
-  width: 60vh;
+  width: 40%;
   height: 80vh;
 }
 
@@ -179,6 +179,16 @@ button:hover {
 /*input form modal*/
 form {
   padding-top: 5%;
+  font-size: ;
+}
+
+input, select  {
+  padding: 10px;
+  width: 35%;
+}
+
+input[type=text]:focus{
+  background-color: lightblue;
 }
 
 #f_name,

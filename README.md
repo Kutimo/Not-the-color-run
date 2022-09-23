@@ -8,6 +8,8 @@ make it responsive
 X add video without the file size.
 X box shadow var.
 darkmode 
+add secondary gradient variable to css
+add font variable   to css
 
 
 ideas for later?:
