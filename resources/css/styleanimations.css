@@ -1,5 +1,6 @@
-/*hover styles*/
+@import url(/resources/css/color.css);
 
+/*hover styles*/
 .hvr-box-shadow-outset {
   display: inline-block;
   vertical-align: middle;
@@ -14,19 +15,24 @@
 .hvr-box-shadow-outset:hover,
 .hvr-box-shadow-outset:focus,
 .hvr-box-shadow-outset:active {
-  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.8);
+  color: rgba(var(--color), 0.9);
+  -webkit-box-shadow: var(--shadowColor);
+  box-shadow: 
+  var(--box-shadow-offset-x)
+  var(--box-shadow-offset-y)
+  var(--box-shadow-blur)
+  var(--box-shadow-spread)
+  var(--box-shadow-color);
+  border: 2px solid rgba(255, 255, 255, 0.5);
 }
 
 /*carousel from section area.*/
-
-
-
 .carousel {
   position: relative;
   height: 400px;
   width: 35%;
   margin: 0 auto;
-  padding: 20px
+  padding: 20px;
 }
 
 .carousel__image {
@@ -118,15 +124,15 @@
   left: 0;
   top: 0;
   width: 100%;
-  height: 100%; 
+  height: 100%;
   overflow: auto; /* Enable scroll if needed */
-  background-color: rgb(0, 0, 0); 
+  background-color: rgb(0, 0, 0);
   background-color: rgba(0, 0, 0, 0.4);
 }
 
 /* Modal Content/Box */
 .modal-content {
-  background:  linear-gradient(
+  background: linear-gradient(
     180deg,
     var(--primary-gradient),
     var(--secondary-gradient),
@@ -173,11 +179,13 @@ button:hover {
 /*input form modal*/
 form {
   padding-top: 5%;
-
 }
 
-#f_name, #l_name, #gender, #address ##state_province{
-width: 35%;
+#f_name,
+#l_name,
+#gender,
+#address #state_province {
+  width: 35%;
 }
 #email {
   margin: 0px;
@@ -189,9 +197,8 @@ width: 35%;
 }
 
 .terms_a:hover {
-color: dodgerblue;
+  color: dodgerblue;
 }
-
 
 select [disabled]:first-child {
   display: none;

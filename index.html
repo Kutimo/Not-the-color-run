@@ -10,13 +10,13 @@
       type="image/x-icon"
       href="/resources/favicon/favicon-16x16.png"
     />
-    <link rel="stylesheet" href="/resources/style.css" />
-    <link rel="stylesheet" href="/resources/styleanimations.css" />
+    <link rel="stylesheet" href="/resources/css/style.css" />
+    <link rel="stylesheet" href="/resources/css/styleanimations.css" />
   </head>
   <body>
     <header>
       <nav id="nav" class="navbar">
-        <a href="#"
+        <a href="#" class="navbar-a"
           ><img
             class="logo_img"
             src="/resources/photos/2020-logo-tcr-header-1.png"
@@ -25,7 +25,7 @@
         </a>
         <ul class="menu">
           <li><a href="#cities">Events</a></li>
-          <li><a href="#about">About</a></li>
+          <li><a href="#carousel_about">About</a></li>
           <li><a href="#">Store</a></li>
           <li><a href="#sponsors">Become a sponsor</a></li>
           <li><a href="#">International</a></li>
@@ -141,7 +141,7 @@
         </div>
       </div>
       <video autoplay muted loop>
-        <source src="/resources/video/TCR-make-magic-1.mp4" />
+        <source src="/resources/video/-colorrun_video.mp4" />
         Your browser does not support the video tag.
       </video>
     </main>
@@ -152,10 +152,9 @@
         <li>Stavanger</li>
         <li>Bergen</li>
         <li>Trondheim</li>
-        <li>Trondheim</li>
       </ul>
     </article>
-    <section class="about_section">
+    <section class="about_section" >
       <div class="section-left">
         <img
           class="section-logo-img"
@@ -170,7 +169,7 @@
           MAGIC, MAKE MEMORIES, and MAKE MORE. TOGETHER.
         </p>
       </div>
-      <div class="carousel">
+      <div class="carousel" id="carousel_about">
         <button class="carousel__button carousel__button--left hidden">
           <img
             src="/resources/svg/buttons/carousel_left copy.svg"
