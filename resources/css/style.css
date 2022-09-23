@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;1,400&display=swap");
-
+@import url(/resources/css/color.css);
 * {
   box-sizing: border-box;
   margin: 0;
@@ -46,12 +46,14 @@ main {
 }
 
 .logo_img {
-  height: 12vh;
+  height: 15vh;
+  padding: 10px;
 }
 
 video {
   z-index: 0;
   width: 100%;
+  opacity: 0.8;
 }
 
 .cta {
@@ -68,16 +70,19 @@ video {
     var(--secondary-gradient),
     var(--tertiary-gradient)
   );
+  opacity: 0.5;
   margin-left: 20px;
   line-height: 40%;
   border: 2px solid rgba(0, 0, 0, 0.717);
+  text-align: center;
   text-decoration: none;
 }
 
-.cta,
-a {
+.cta {
   padding: 30px;
-  text-align: center;
+
+  opacity: 1;
+  color: white;
 }
 
 article {
@@ -202,17 +207,5 @@ h6 {
   padding: 10px;
 }
 
-:root {
-  /*colors*/
-  --primary-color: #6b80ef;
-  --secondary-color: #297fb1;
-  --tertiary--color: #5e9094;
-  
-  /*gradient 1*/
-  --primary-gradient: #6b80ef 12.11%;
-  --secondary-gradient: #297fb1 55.96%;
-  --tertiary-gradient: #5e9094 108.83%;
-  /* gradient 2 */
-  --primary-gradient2: #5500e7 -1.5%;
-  --secondary-gradient2: #eedf00 63.29%;
-}
+
+

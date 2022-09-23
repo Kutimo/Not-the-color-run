@@ -1,0 +1,20 @@
+:root {
+    /*colors*/
+    --primary-color: #6b80ef;
+    --secondary-color: #297fb1;
+    --tertiary--color: #5e9094;
+    
+    /*gradient 1*/
+    --primary-gradient: #6b80ef 12.11%;
+    --secondary-gradient: #297fb1 55.96%;
+    --tertiary-gradient: #5e9094 108.83%;
+    /* gradient 2 */
+    --primary-gradient2: #5500e7 -1.5%;
+    --secondary-gradient2: #eedf00 63.29%;
+    /*Box Shadow*/
+    --box-shadow-offset-x: 13px;
+    --box-shadow-offset-y: 13px;
+    --box-shadow-blur: 13px;
+    --box-shadow-spread: 3px;
+    --box-shadow-color: rgba(0, 0, 0, 0.9);
+  }

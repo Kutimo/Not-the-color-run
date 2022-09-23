@@ -1,3 +1,4 @@
+
 //modal
 let modal = document.getElementById("myModal");
 
@@ -97,3 +98,12 @@ dotsNav.addEventListener('click', e => {
 
   moveToSlide(currentSlide, targetSlide, targetDot, targetIndex);
 })
+
+
+//anchor smooth scrolling
+$('a').click(function(){
+  $('html, body').animate({
+      scrollTop: $( $(this).attr('href') ).offset().top
+  }, 500);
+  return false;
+});
