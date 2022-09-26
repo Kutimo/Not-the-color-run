@@ -6,6 +6,7 @@
  #hamburger_menu {
     height: 44px;
     position: absolute;
+    margin-inline: auto;
  }
    .menu {
     visibility: hidden;    
