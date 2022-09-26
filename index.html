@@ -11,9 +11,9 @@
       type="image/x-icon"
       href="/resources/favicon/favicon-16x16.png"
     />
-    <link rel="stylesheet" href="/resources/css/style.css" />
-    <link rel="stylesheet" href="/resources/css/styleanimations.css" />
-    <link rel="stylesheet" href="/resources/css/media_query.css">
+    <link rel="stylesheet" type="text/css" href="/resources/css/style.css" />
+    <link rel="stylesheet" type="text/css" href="/resources/css/styleanimations.css" />
+    <link rel="stylesheet" type="text/css" href="/resources/css/media_query.css" />
   </head>
   <body>
     <header>
@@ -25,13 +25,20 @@
             alt="Color run logo"
           />
         </a>
-        <ul class="menu">
-          <li><a href="#cities">Events</a></li>
-          <li><a href="#carousel_about">About</a></li>
-          <li><a href="#">Store</a></li>
-          <li><a href="#sponsors">Become a sponsor</a></li>
-          <li><a href="#">International</a></li>
-        </ul>
+        <div class="menu_dropdown">
+          <img id="hamburger_menu"
+            src="/resources/svg/buttons/Hamburger_menu.svg"
+            alt="menu button"
+          />
+        </div>
+          <ul class="menu">
+            <li><a href="#cities">Events</a></li>
+            <li><a href="#carousel_about">About</a></li>
+            <li><a href="#">Store</a></li>
+            <li><a href="#sponsors">Become a sponsor</a></li>
+            <li><a href="#">International</a></li>
+          </ul>
+        
       </nav>
     </header>
     <main>
@@ -41,13 +48,22 @@
       <div id="myModal" class="modal">
         <div class="modal-content">
           <div class="modal_header">
-          <h2 class="modal_h2">Registration  </h2>
-          <span class="close">&times;</span>
-        </div>
+            <h2 class="modal_h2">Registration</h2>
+            <span class="close">&times;</span>
+          </div>
           <form>
-            <input type="text" name="fname" placeholder="Your first name"
-            id="f_name"/>
-            <input type="text" name="lname" placeholder="Your last name" id="l_name"/>
+            <input
+              type="text"
+              name="fname"
+              placeholder="Your first name"
+              id="f_name"
+            />
+            <input
+              type="text"
+              name="lname"
+              placeholder="Your last name"
+              id="l_name"
+            />
             <br />
             <input
               type="email"
@@ -158,7 +174,7 @@
         <li>Trondheim</li>
       </ul>
     </article>
-    <section class="about_section" >
+    <section class="about_section">
       <div class="section-left">
         <img
           class="section-logo-img"

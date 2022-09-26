@@ -1,0 +1,19 @@
+@import url(/resources/css/color.css);
+@import url(/resources/css/style.css);
+@import url(/resources/css/styleanimations.css);
+
+@media only screen and (max-width: 800px) { 
+ #hamburger_menu {
+    height: 44px;
+    position: absolute;
+ }
+   .menu {
+    visibility: hidden;    
+   }
+}
+@media only screen and (min-width: 800px) {
+    .menu_dropdown img {
+    visibility: hidden;
+    }
+    
+}

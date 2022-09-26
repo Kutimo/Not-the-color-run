@@ -1,4 +1,6 @@
 @import url(/resources/css/color.css);
+@import url(/resources/css/style.css);
+@import url(/resources/css/media_query.css);
 
 /*hover styles*/
 .hvr-box-shadow-outset {
