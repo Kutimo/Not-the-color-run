@@ -150,6 +150,7 @@
   width: 100%;
   display: flex;
   justify-content: space-between;
+  padding: 5px;
 
 }
 
@@ -160,11 +161,9 @@ button:hover {
 
 /* The Close Button */
 .close {
-  position: ;
-  right: 37%;
-  top: 7%;
+  
   color: rgba(0, 0, 0, 0.4);
-  font-size: 28px;
+  font-size: 36px;
   font-weight: bold;
   z-index: 5;
 }
@@ -180,7 +179,7 @@ button:hover {
   color: #000000;
   font-size: 2em;
   padding: 0;
-  border-bottom: 0.5px solid #000000;
+  text-decoration: underline 1.5px;
   z-index: 4;
 }
 
