@@ -32,10 +32,10 @@ nav {
 }
 
 .menu_dropdown {
-display: flex;
-align-items: center;
 width: 100%;
 margin-right: 20px;
+position: relative;
+user-select: none;
 }
 
 .menu {
@@ -173,7 +173,8 @@ footer {
 
 h2 {
   color: white;
-  font-size: 68px;
+  font-size: clamp(3rem, 10vh + 1rem, 5rem);
+  
   font-weight: 500;
 }
 
