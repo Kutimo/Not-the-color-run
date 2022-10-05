@@ -1,3 +1,19 @@
+A school task orginally, took the concept and added many feautures and javascript functions.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 Color run clone
 to do:
 finnish modal
