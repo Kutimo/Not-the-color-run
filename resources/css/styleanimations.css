@@ -1,4 +1,6 @@
 @import url(/resources/css/color.css);
+@import url(/resources/css/style.css);
+@import url(/resources/css/media_query.css);
 
 /*hover styles*/
 .hvr-box-shadow-outset {
@@ -141,8 +143,17 @@
   margin: 5% auto; /* 15% from the top and centered */
   padding: 10px;
   border: 1px solid rgba(0, 0, 0, 0.5);
-  width: 60vh;
+  width: 40%;
   height: 80vh;
+  display: flex;
+  flex-wrap: wrap;
+}
+.modal_header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 5px;
+
 }
 
 /*button*/
@@ -152,11 +163,9 @@ button:hover {
 
 /* The Close Button */
 .close {
-  position: absolute;
-  right: 37%;
-  top: 7%;
+  
   color: rgba(0, 0, 0, 0.4);
-  font-size: 28px;
+  font-size: 36px;
   font-weight: bold;
   z-index: 5;
 }
@@ -170,22 +179,43 @@ button:hover {
 
 .modal_h2 {
   color: #000000;
-  font-size: 36px;
+  font-size: 2em;
   padding: 0;
-  border-bottom: 0.5px solid #000000;
+  text-decoration: underline 1.5px;
   z-index: 4;
 }
 
 /*input form modal*/
 form {
   padding-top: 5%;
+  
+}
+
+input, select  {
+  padding: 5px;
+  width: 35%;
+  font-size: 1rem;
+  margin: 5px;
+  background: rgba(255, 255, 255, 0.626);
+  border: 1px solid #000000;
+  border-radius: 4px;
+
+}
+
+input[type=text]:focus{
+  background-color: lightblue;
 }
 
 #f_name,
-#l_name,
+#l_name{
+  width: 45%;
+}
+#sel_birth_day, #sel_birth_month, #sel_birth_year{
+  width: 30%;
+}
 #gender,
 #address #state_province {
-  width: 35%;
+  width: 32%;
 }
 #email {
   margin: 0px;

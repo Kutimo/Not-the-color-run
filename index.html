@@ -4,14 +4,17 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--  Make a color meta tag!  -->
     <title>Not the color run</title>
     <link
       rel="icon"
       type="image/x-icon"
       href="/resources/favicon/favicon-16x16.png"
     />
-    <link rel="stylesheet" href="/resources/css/style.css" />
-    <link rel="stylesheet" href="/resources/css/styleanimations.css" />
+    <link rel="stylesheet" type="text/css" href="/resources/css/style.css" />
+    <link rel="stylesheet" type="text/css" href="/resources/css/styleanimations.css" />
+    <link rel="stylesheet" type="text/css" href="/resources/css/media_query.css" />
+    <link rel="stylesheet" href="/resources/css/color.css">
   </head>
   <body>
     <header>
@@ -23,13 +26,20 @@
             alt="Color run logo"
           />
         </a>
-        <ul class="menu">
-          <li><a href="#cities">Events</a></li>
-          <li><a href="#carousel_about">About</a></li>
-          <li><a href="#">Store</a></li>
-          <li><a href="#sponsors">Become a sponsor</a></li>
-          <li><a href="#">International</a></li>
-        </ul>
+        <div class="menu_dropdown">
+          <img id="hamburger_menu"
+            src="/resources/svg/buttons/Hamburger_menu.svg"
+            alt="menu button"
+          />
+        </div>
+          <ul class="menu">
+            <li><a href="#cities">Events</a></li>
+            <li><a href="#carousel_about">About</a></li>
+            <li><a href="#">Store</a></li>
+            <li><a href="#sponsors">Become a sponsor</a></li>
+            <li><a href="#">International</a></li>
+          </ul>
+        
       </nav>
     </header>
     <main>
@@ -38,12 +48,23 @@
       </button>
       <div id="myModal" class="modal">
         <div class="modal-content">
-          <span class="close">&times;</span>
-          <h2 class="modal_h2">Registration</h2>
+          <div class="modal_header">
+            <h2 class="modal_h2">Registration</h2>
+            <span class="close">&times;</span>
+          </div>
           <form>
-            <input type="text" name="fname" placeholder="Your first name"
-            id="f_name"/>
-            <input type="text" name="lname" placeholder="Your last name" id="l_name"/>
+            <input
+              type="text"
+              name="fname"
+              placeholder="Your first name"
+              id="f_name"
+            />
+            <input
+              type="text"
+              name="lname"
+              placeholder="Your last name"
+              id="l_name"
+            />
             <br />
             <input
               type="email"
@@ -154,7 +175,7 @@
         <li>Trondheim</li>
       </ul>
     </article>
-    <section class="about_section" >
+    <section class="about_section">
       <div class="section-left">
         <img
           class="section-logo-img"
@@ -276,7 +297,7 @@
       </div>
       <h6>Ⓒ None rights reserved nottherealcolorrun.com</h6>
     </footer>
-    <script src="js/app.js"></script>
-    <script src="/js/data-list.js"></script>
+    <script defer src="js/app.js"></script>
+    <script defer src="/js/data-list.js"></script>
   </body>
 </html>
